@@ -1,11 +1,10 @@
 import type { Config } from "tailwindcss";
-
+const path = require('path');
 const config: Config = {
   important:true,
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    path.join(__dirname, 'pages/**/*.{js,ts,jsx,tsx}'),
+    path.join(__dirname, 'components/**/*.{js,ts,jsx,tsx}'),
   ]
 };
 export default config;
