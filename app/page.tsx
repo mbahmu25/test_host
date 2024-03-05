@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {useState,useRef,useEffect} from "react";
 export default function Home() {
-  const [dat,setDat] = useState({})
+  const [dat,setDat] = useState({'id':5})
   useEffect(()=>{
     async function call(){
       const res = await fetch('https://mbahmu25.github.io/test_host/api/tes',{
