@@ -5,7 +5,7 @@ export default function Home() {
   const [dat,setDat] = useState({})
   useEffect(()=>{
     async function call(){
-      const res = await fetch('http://localhost:3001/api/tes',{
+      const res = await fetch('https://mbahmu25.github.io/test_host/api/tes',{
       headers:{
         'accept': 'application/json',
           'content-type': 'application/json',
