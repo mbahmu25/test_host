@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {useState,useRef,useEffect} from "react";
 export default function Home() {
-  const [dat,setDat] = useState([])
+  const [dat,setDat] = useState({})
   useEffect(()=>{
     async function call(){
       const res = await fetch('http://localhost:3001/api/tes',{
